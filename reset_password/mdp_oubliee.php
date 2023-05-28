@@ -41,7 +41,7 @@ if (isset($_POST['submit'])) {
 function sendMail($email,$token)
 {
 
- $myemail="salahor20@gmail.com";
+ $myemail="unrderientest@gmail.com";
  $mypassword = "dxflgqqyipkyspor";
 
   $mail = new PHPMailer();

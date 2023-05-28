@@ -24,9 +24,9 @@
         <!-- Masthead-->
         <header class="masthead">
         <div class="container">
-                <div class="masthead-subheading">Un R de rien qui contribue beaucoup</div>
-                <div class="masthead-heading text-uppercase">Trions différemment nos déchets ensemble</div>
-                <div class="masthead-subheading">Il était temps de s’y mettre !</div>
+                <div class="masthead-subheading" style="font-size: 30px;">Un R de rien qui contribue beaucoup</div>
+                <div class="masthead-heading text-uppercase" style="font-size: 60px;">Trions différemment nos déchets ensemble</div>
+                <div class="masthead-subheading" style="font-size: 30px;">>Il était temps de s’y mettre !</div>
             </div>
         </header>
         <!-- Services-->

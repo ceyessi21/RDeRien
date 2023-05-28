@@ -1,21 +1,44 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Un R de Rien</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Un R de Rien</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+#buttons button:hover{
+   
+    background-color:#a2c11c
+}
+#buttons button{
+    border:1px solid #a2c11c;
+}
+        /* Add your custom CSS rules for responsiveness here */
+        @media (max-width: 767px) {
+            /* Styles for screens smaller than 768px */
+            .col-3 {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .col-9 {
+                width: 100%;
+            }
+            #A{
+                margin-bottom: 10px;
+            }
+
+            /* Adjust other styles as needed */
+        }
+    </style>
+</head>
+<body>
         <!-- Navigation-->
         <?php include_once('partials/nav.php');?>
         <div>
@@ -27,7 +50,7 @@
                         <h3 class="section-subheading text-muted">Ici, retrouvez toutes les matières qu'il est possible de recycler, comment elles peuvent être recyclées et en quoi elles peuvent se métamorphoser!</h3>
                     </div>
                 <div class="row">
-                <div class="col-3">
+                <div class="col-3" id="buttons">
                         <form class="d-flex pb-5" role="search">
                             <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Rechercher</button>
@@ -48,13 +71,12 @@
                 <div class="col-9 ">
                 <div class="row d-flex justify-content-between">
                         <div class="col-lg-4 col-sm-5 mb-4">
-                            <!-- Portfolio item 1-->
                             <div class="portfolio-item">
                                 <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
                                     <div class="portfolio-hover">
                                         <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                     </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
+                                    <img class="img-fluid"  tyle="height:175px ; width:100%" src="assets/img/portfolio/1.jpg" alt="..." />
                                 </a>
                                 <div class="portfolio-caption">
                                     <div class="portfolio-caption-heading">Canette</div>
@@ -62,59 +84,30 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-5 mb-4">
-                            <!-- Portfolio item 2-->
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Bouteille Plastique</div>
-                                    <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-5 mb-4">
-                            <!-- Portfolio item 3-->
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading"> Serviettes hygiéniques</div>
-                                    <div class="portfolio-caption-subheading text-muted">Identity</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-5 mb-4 mb-lg-0">
-                            <!-- Portfolio item 4-->
+                     
+                        <div id="A"  class="col-lg-4 col-sm-5 mb-4 mb-lg-0">
+                    
                             <div class="portfolio-item">
                                 <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
                                     <div class="portfolio-hover">
                                         <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                     </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
+                                    <img class="img-fluid"  tyle="height:175px ; width:100%"src="assets/img/portfolio/4.jpg" alt="..." />
                                 </a>
                                 <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading"> Electroménager</div>
+                                    <div class="portfolio-caption-heading" style="font-size: 23px; margin-right:100px"> Electroménager</div>
                                     <div class="portfolio-caption-subheading text-muted">Branding</div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-5 mb-4 mb-sm-0">
-                            <!-- Portfolio item 5-->
+                         
                             <div class="portfolio-item">
                                 <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
                                     <div class="portfolio-hover">
                                         <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                     </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
+                                    <img class="img-fluid" tyle="height:175px ; width:100%" src="assets/img/portfolio/5.jpg" alt="..." />
                                 </a>
                                 <div class="portfolio-caption">
                                     <div class="portfolio-caption-heading">Caoutchouc</div>
@@ -122,18 +115,48 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-5">
-                            <!-- Portfolio item 6-->
+                        <div id="A" class="col-lg-4 col-sm-5">
+                       
                             <div class="portfolio-item">
                                 <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
                                     <div class="portfolio-hover">
                                         <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                     </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
+                                    <img class="img-fluid" src="assets/img/portfolio/6.jpg" style="height:175px ; width:100%" alt="..." />
                                 </a>
                                 <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Window</div>
+                                    <div class="portfolio-caption-heading">Bouteille en Verre</div>
                                     <div class="portfolio-caption-subheading text-muted">Photography</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-5 mb-4">
+                        
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" tyle="height:175px ; width:100%" src="assets/img/portfolio/2.jpg" alt="..." />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Bouteille Plastique</div>
+                                    <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="A"  class="col-lg-4 col-sm-5 mb-4">
+                           
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid"  tyle="height:175px ; width:100%" src="assets/img/portfolio/3.jpg" alt="..." />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading"> Serviettes hygiéniques</div>
+                                    <div class="portfolio-caption-subheading text-muted">Identity</div>
                                 </div>
                             </div>
                         </div>
