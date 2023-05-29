@@ -21,7 +21,7 @@
                     </button>
                 </a>
 
-                <a style="color:yellowgreen; font-weight: bold;" class="nav-link" href="./index.php#about">
+                <a style="color:yellowgreen; font-weight: bold;" class="nav-link" href="j'agis.php">
                     <button id="btn-login" class="btn btn-success">
                         J’agis
                     </button>
